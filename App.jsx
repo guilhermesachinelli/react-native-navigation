@@ -17,8 +17,37 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Inicio" component={Home} />
-        <Stack.Screen name="Contato" component={Contact} />
+        <Stack.Screen name="Inicio" component={Home}
+          options={{
+            title: 'Inicio',
+            headerStyle: {
+              backgroundColor: 'lightblue',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            headerTitleAlign: 'center',
+            //headerShown: false,
+          }
+          }
+        />
+        <Stack.Screen name="Contato" component={Contact} 
+              options={{
+                title: 'Contato',
+                headerStyle: {
+                  backgroundColor: 'lightblue',
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: 'bold',
+                },
+                headerTitleAlign: 'center',
+                headerShown : 'false'
+                //headerShown: false,
+              }
+              }
+        />
         <Stack.Screen name="Perfil" component={Profile} />
       </Stack.Navigator>
       <StatusBar style="auto" />
@@ -33,4 +62,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });
