@@ -32,23 +32,38 @@ export default function App() {
           }
           }
         />
-        <Stack.Screen name="Contato" component={Contact} 
-              options={{
-                title: 'Contato',
-                headerStyle: {
-                  backgroundColor: 'lightblue',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                },
-                headerTitleAlign: 'center',
-                headerShown : 'false'
-                //headerShown: false,
-              }
-              }
+        <Stack.Screen name="Contato" component={Contact}
+          options={{
+            title: 'Contato',
+            headerStyle: {
+              backgroundColor: 'lightblue',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            headerTitleAlign: 'center',
+            headerShown: 'false'
+            //headerShown: false,
+          }
+          }
         />
-        <Stack.Screen name="Perfil" component={Profile} />
+        <Stack.Screen name="Perfil" component={Profile}
+          options={{
+            title: 'Contato',
+            headerStyle: {
+              backgroundColor: 'lightblue',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            headerTitleAlign: 'center',
+            headerShown: 'false'
+            //headerShown: false,
+          }
+          }
+        />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
